@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:#dc95ca;
+}
+a{
+    color:#333;
+    text-decoration:none;
+}
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid#ddd;
+}
+ul{
+    list-style:none;
+}
+.nav-box{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 40px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    color: #333;
+   }
+   .nav-box .nav{
+    display: flex;
+    font-size:20px;
+    color: #555;
+   }
+   .nav-box .nav li{
+    padding-left: 50px;
+   }
+   .nav-box .nav a.on,
+   .nav-box .nav a:hover{
+    color: #000;
+    padding-bottom: 10px;
+    border-bottom: 2px solid#333;
+   }
+
+
+.menu img{
+    border-radius:50%;
+}
+.menu p{
+    font-size:20px;
+}
+
+
+.content p{
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.flex-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.block{
+    overflow:hidden;
+    position: relative;
+}
+.desc{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    cursor:pointer;
+    background: rgba(0,0,0,0.3);
+    transition: opacity 1s ease-in;
+}
+.block:hover.desc{
+    opacity: 1;
+}
+.block.pic{
+    transition: all 0.3s ease-in;
+}
+.block:hover img{
+    transform: scale(1.2);
+}
